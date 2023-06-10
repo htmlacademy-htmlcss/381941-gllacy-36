@@ -143,6 +143,7 @@ html {
   flex-direction: row;
   display: flex;
   max-width: 422px;
+  margin-left: 16px;
 }
 
 .navigation-link {
@@ -164,5 +165,9 @@ html {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.user-nav {
+  margin-left: auto;
 }
 
