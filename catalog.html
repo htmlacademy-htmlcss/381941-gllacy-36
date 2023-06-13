@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="favicon.png">  
 </head>
 
-<body>
+<body class="catalog-page">
   <div class="body-wrapper-inner">
     <header class="page-header container">
       <img class="logo-img" width="137" height="56" src="img/logo.svg" alt="Логотип сайта">
@@ -34,7 +34,7 @@
     </header>
 
     <main class="main-index">      
-      <section class="catalog-filter container">
+      <section class="container">
         <div class="breadcrumbs">
           <a class="breadcrumbs-item breadcrumb-arrow" href="index.html">
             Главная
@@ -42,105 +42,104 @@
           <a class="breadcrumbs-item breadcrumb-arrow">
             Каталог
           </a>
-          <a class="breadcrumbs-item">
+          <a class="breadcrumbs-item active">
             Сливочное мороженое
           </a>
         </div>
 
         <h1 class="catalog-heading">Сливочное мороженое</h1>
+        <div class="catalog-filter">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group infrastructure-group">
+              <legend class="catalog-filter-title">Сортировка:</legend>
+              <label for="sortirovka"><span class="visually-hidden">Выберите сортировку</span></label> 
+              <select class="sort-select" name="sortirovka" id="sortirovka"> 
+                  <option value="popilarnost">по популярности</option> 
+                  <option value="otion_2">Опция 2</option> 
+                  <option value="otion_3">Опция 3</option> 
+                  <option value="otion_4">Опция 4</option> 
+              </select>
+            </fieldset>
 
-          <fieldset class="catalog-filter-group infrastructure-group">
-            <legend class="catalog-filter-title">Сортировка:</legend>
-            <label for="sortirovka"><span class="visually-hidden">Выберите сортировку</span></label> 
-            <select name="sortirovka" id="sortirovka"> 
-                <option value="popilarnost">по популярности</option> 
-                <option value="otion_2">Опция 2</option> 
-                <option value="otion_3">Опция 3</option> 
-                <option value="otion_4">Опция 4</option> 
-            </select>
-          </fieldset>
+            <fieldset class="catalog-filter-group range">
+              <legend class="catalog-filter-title filter-title-price">Цена: 100 ₽ – 500 ₽</legend>
+              <div class="catalog-filter-range-controls">
+                <div class="catalog-filter-range-controls-price-wrapper visually-hidden">
 
-          <fieldset class="catalog-filter-group range">
-            <legend class="catalog-filter-title filter-title-price">Цена: 100 ₽ – 500 ₽</legend>
-            <div class="catalog-filter-range-controls">
-              <div class="catalog-filter-range-controls-price-wrapper">
+                  <div class="price-min-wrapper"><input id="controls-price-min" class="controls-price-min" type="number" min="1" value="100">
+                    <label for="controls-price-min"><span class="visually-hidden">от</span></label>
+                  </div>
 
-                <div class="price-min-wrapper"><input id="controls-price-min" class="controls-price-min" type="number" min="1" value="100">
-                  <label for="controls-price-min"><span class="visually-hidden">от</span></label>
+                  <div class="price-max-wrapper"><input id="controls-price-max" class="controls-price-max" type="number" min="1" value="500"><label for="controls-price-max"><span class="visually-hidden">до</span></label>
+                  </div>
                 </div>
 
-                <div class="price-max-wrapper"><input id="controls-price-max" class="controls-price-max" type="number" min="1" value="9000"><label for="controls-price-max"><span class="visually-hidden">до</span></label>
+                <div class="catalog-filter-scale">
+                  <div class="catalog-filter-bar">
+                    <div class="catalog-filter-bar-scale"></div>
+                  </div>
+                  <button type="button" aria-label="минимальное значение" class="range-toggle range-toggle-min"></button>
+                  <button type="button" aria-label="максимальное значение" class="range-toggle range-toggle-max"></button>
                 </div>
               </div>
 
-              <div class="catalog-filter-scale">
-                <div class="catalog-filter-bar">
-                  <div class="catalog-filter-bar-scale"></div>
-                </div>
-                <button type="button" aria-label="минимальное значение" class="range-toggle range-toggle-min"></button>
-                <button type="button" aria-label="максимальное значение" class="range-toggle range-toggle-max"></button>
-              </div>
-            </div>
+            </fieldset>
 
-          </fieldset>
-
-          <fieldset class="catalog-filter-group fat-group">
-            <legend class="catalog-filter-title">Жирность:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="first-option" name="fat-radio" value="0%">
-                <label for="first-option" class="control-radio">0%</label>
-              </li>
-              <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="second-option" name="fat-radio" value="do 10%">
-                <label for="second-option" class="control-radio">до 10% </label>                                      
-              </li>
-              <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="third-option" name="fat-radio" value="do 30%">
-                <label for="third-option" class="control-radio">до 30% </label>                                      
-              </li>
-              <li class="catalog-filter-item">
-                <input class="control-radio-input" type="radio" id="fourth-option" name="fat-radio" value="vyshe 30%">
-                <label for="fourth-option" class="control-radio">выше 30%</label>                                      
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="catalog-filter-group favour-group">
-              <legend class="catalog-filter-title">Наполнители:</legend>
+            <fieldset class="catalog-filter-group fat-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="chokolate" id="chokolate">
-                  <label for="chokolate" class="control">шоколадные</label>                    
+                  <input class="control-radio-input" type="radio" id="first-option" name="fat-radio" value="0%">
+                  <label for="first-option" class="control-radio">0%</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="shugar" id="shugar">
-                  <label for="shugar" class="control">сахарные посыпки</label>
+                  <input class="control-radio-input" type="radio" id="second-option" name="fat-radio" value="do 10%">
+                  <label for="second-option" class="control-radio">до 10% </label>                                      
                 </li>
                 <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="fruits" id="fruits">
-                  <label for="fruits" class="control">фрукты</label>                  
+                  <input class="control-radio-input" type="radio" id="third-option" name="fat-radio" value="do 30%">
+                  <label for="third-option" class="control-radio">до 30% </label>                                      
                 </li>
                 <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="syrops" id="syrops">
-                  <label for="syrops" class="control">сиропы</label>                  
-                </li>
-                <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="jams" id="jams">
-                  <label for="jams" class="control">джемы</label>                  
+                  <input class="control-radio-input" type="radio" id="fourth-option" name="fat-radio" value="vyshe 30%">
+                  <label for="fourth-option" class="control-radio">выше 30%</label>                                      
                 </li>
               </ul>
             </fieldset>
 
-            <button class="filter-button button-apply blue-button" type="submit">Применить</button>
-        </form> 
+            <fieldset class="catalog-filter-group favour-group">
+                <legend class="catalog-filter-title">Наполнители:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <input class="control-input" type="checkbox" name="chokolate" id="chokolate">
+                    <label for="chokolate" class="control">шоколадные</label>                    
+                  </li>
+                  <li class="catalog-filter-item">
+                    <input class="control-input" type="checkbox" name="shugar" id="shugar">
+                    <label for="shugar" class="control">сахарные посыпки</label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <input class="control-input" type="checkbox" name="fruits" id="fruits">
+                    <label for="fruits" class="control">фрукты</label>                  
+                  </li>
+                  <li class="catalog-filter-item">
+                    <input class="control-input" type="checkbox" name="syrops" id="syrops">
+                    <label for="syrops" class="control">сиропы</label>                  
+                  </li>
+                  <li class="catalog-filter-item">
+                    <input class="control-input" type="checkbox" name="jams" id="jams">
+                    <label for="jams" class="control">джемы</label>                  
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="filter-button button-apply blue-button" type="submit">Применить</button>
+          </form>
+        </div> 
 
 
         <div class="popular-products">
-        <h2 class="popular-products-heading">Попробуйте самые популярные вкусы нашего мороженого</h2>
-
         <div class="popular-products-wrapper">
           <div class="popular-products-item">
             <img class="popular-products-item-img" src="img/malinka-product.png" alt="" width="168" height="168">
@@ -152,7 +151,7 @@
             </div>
           </div>
           <div class="popular-products-item">
-            <img class="popular-products-item-img" src="img/malinka-product.png" alt="" width="168" height="168">
+            <img class="popular-products-item-img" src="img/fistashka-product.png" alt="" width="168" height="168">
             <h3 class="popular-products-item-heading">Фисташка</h3>
             <p class="popular-products-item-desc">Фисташковый пломбир с кусочками шоколада</p>
             <div class="popular-products-item-shop">
@@ -256,15 +255,14 @@
       </div>
 
       <div class="more-products-wrapper">
+        <div class="more-products-pagination"></div>
         <button type="button" class="more-products-button">Показать еще</button>
           <ul class="more-products-pagination">
-            <li class="more-products-pagination-item"><</li>
-            <li class="more-products-pagination-item pagination-item-active">1</li>
+            <li class="more-products-pagination-item pagination-item-active item-first">1</li>
             <li class="more-products-pagination-item">2</li>
             <li class="more-products-pagination-item">3</li>
             <li class="more-products-pagination-item">4</li>
-            <li class="more-products-pagination-item">5</li>
-            <li class="more-products-pagination-item">></li>
+            <li class="more-products-pagination-item item-last">5</li>
           </ul>  
       </div>  
 
@@ -272,6 +270,7 @@
       </section>  
       
     </main>
+
     <footer class="page-footer container">
 
       <ul class="page-footer-social-list">
@@ -293,12 +292,14 @@
       </ul>
 
       <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
-          <li class="footer-navigation-item like"><a title="Перейти" class="navigation-link" href="#">Для поставщиков</a></li>
-          <li class="footer-navigation-item"><a title="Перейти" class="navigation-link" href="#">Наши документы</a></li>
-          <li class="footer-navigation-item"><a title="Перейти" class="navigation-link" href="#">О производстве</a></li>
-          <li class="footer-navigation-item"><a title="Перейти" class="navigation-link" href="#">Экологические стандарты</a></li>
-        </ul>
+          <ul class="footer-navigation-list-first">
+            <li class="footer-navigation-item like"><a title="Перейти" class="navigation-footer-link" href="#">Для поставщиков</a></li>
+            <li class="footer-navigation-item"><a title="Перейти" class="navigation-footer-link" href="#">О производстве</a></li>
+          </ul>
+          <ul class="footer-navigation-list-second">
+            <li class="footer-navigation-item"><a title="Перейти" class="navigation-footer-link" href="#">Наши документы</a></li>
+            <li class="footer-navigation-item"><a title="Перейти" class="navigation-footer-link" href="#">Экологические стандарты</a></li>
+          </ul>
       </nav>
 
       <div class="footer-academy-link">
@@ -308,7 +309,7 @@
         <p class="footer-academy-link-copiwrite">Сделано в <a class="link-copiwrite" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </div>
 
-      </footer>
+    </footer>
     </div>
   </body>
   </html>
