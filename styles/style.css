@@ -729,7 +729,7 @@ html {
   color: #B9B9B9;
 }
 
-.subscribe-form-button, .delivery-button, .form-button {
+.subscribe-form-button, .delivery-button, .form-button, .cart-button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
