@@ -100,6 +100,10 @@ button, a, label {
   cursor: pointer;
 }
 
+fieldset {
+  border: none;
+}
+
 body {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -729,7 +733,7 @@ html {
   color: #B9B9B9;
 }
 
-.subscribe-form-button, .delivery-button, .form-button, .cart-button {
+.subscribe-form-button, .delivery-button, .form-button, .cart-button, .contact-form-popup-button, .login-popup-button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -1308,3 +1312,195 @@ html {
   position: absolute;
   right: -10px;
 }
+
+.contact-form-popup {
+  width: 570px;
+  background: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  padding: 64px 64px 66px 64px;
+  position: relative;
+}
+
+.contact-form-popup-box input, .contact-form-popup-area-input {
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+.contact-form-popup-close {
+  position: absolute;
+  right: 0;
+}
+
+.contact-form-popup-legend {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin-bottom: 32px;
+}
+
+.contact-popup-item input, .contact-form-popup-area-input {
+  width: 100%;
+}
+
+.contact-popup-item {
+  margin-bottom: 16px;
+}
+
+.contact-form-popup-area-input {
+  height: 149px;
+  position: relative;
+  resize:none
+}
+
+.contact-form-popup-button {
+  margin-left: auto;
+  display: block;
+}
+
+.contact-form-popup-close {
+  border: none;
+  width: 12px;
+  height: 12px;
+  background: url(../img/popup-close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 84px;
+}
+
+.popup-cart-info {
+  width: 288px;
+  height: 156px;
+  background: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popup-cart-info-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #2D3440;
+  max-width: 288px;
+}
+
+.login-popup {
+  width: 420px;
+  min-height: 350px;
+  background: #FCFCFC;
+  border-radius: 4px;
+  padding: 48px 48px 52px 48px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));
+}
+
+.login-popup-legend {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin-bottom: 32px;
+}
+
+.login-popup-mail-input, .login-popup-area-input {
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.login-popup-mail.login-popup-item {
+  margin-bottom: 16px;
+}
+
+.login-popup-area-input {
+  margin-bottom: 32px;
+}
+
+.login-button-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.login-button-navigation-item a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+}
+
+.login-popup-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-popup {
+  filter: drop-shadow(0px 8px 16px rgba(45, 52, 64, 0.12));
+  background: #FCFCFC;
+  border-radius: 4px;
+  width: 356px;
+}
+
+.search-popup-input {
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.search-popup-input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+

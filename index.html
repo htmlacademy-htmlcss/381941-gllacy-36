@@ -292,7 +292,7 @@
 
 <div class="contact-form-popup">
   <form class="contact-form-popup-box" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-
+    <button class="contact-form-popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <fieldset class="contact-form-popup-fieldset">
       <legend class="contact-form-popup-legend">Мы обязательно ответим Вам!</legend> 
 
@@ -308,8 +308,8 @@
 
       <div class="contact-form-popup-area contact-popup-item">
         <label class="contact-form-popup-area-label" for="contact-form-popup-area"><span class="visually-hidden">В свободной форме</span></label>
-        <input class="contact-form-popup-area-input" type="text" name="contact-form-popup-area" placeholder="В свободной форме" id="contact-form-popup-area" required>
-      </div>
+        <textarea class="contact-form-popup-area-input" type="text" name="contact-form-popup-area" placeholder="В свободной форме" id="contact-form-popup-area" required></textarea>
+        </div>
 
       <button class="contact-form-popup-button button" type="submit">Отправить</button>   
     </fieldset>
@@ -332,9 +332,7 @@
   <form class="login-popup-box" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
 
     <fieldset class="login-popup-fieldset">
-      <legend class="login-popup-legend">Личный кабинет</legend> 
-
-
+      <legend class="login-popup-legend">Личный кабинет</legend>
       <div class="login-popup-mail login-popup-item">
         <label class="login-popup-mail-label" for="login-popup-mail"><span class="visually-hidden">Ваша почта</span></label>
         <input class="login-popup-mail-input" type="email" name="login-popup-mail" placeholder="email@example.com" id="login-popup-mail" required>
@@ -342,14 +340,14 @@
 
       <div class="login-popup-area login-popup-item">
         <label class="login-popup-area-label" for="login-popup-area"><span class="visually-hidden">Ваш пароль</span></label>
-        <input class="login-popup-area-input" type="password" name="login-popup-area" placeholder="12345678" id="login-popup-area" required>
+        <input class="login-popup-area-input" type="password" name="login-popup-area" placeholder="••••••••" id="login-popup-area" required>
       </div>
 
       <div class="login-popup-button-wrapper">
       <button class="login-popup-button button" type="submit">Отправить</button>
         <ul class="login-button-navigation">
-          <li class="login-button-navigation-item">Забыли пароль?</li> 
-          <li class="login-button-navigation-item">Регистрация</li> 
+          <li class="login-button-navigation-item"><a href="#">Забыли пароль?</a></li> 
+          <li class="login-button-navigation-item"><a href="#">Регистрация</a></li> 
         </ul> 
       </div>
     </fieldset>
@@ -365,7 +363,7 @@
     <fieldset class="search-popup-fieldset">
     <legend class="search-popup-legend"><span class="visually-hidden">Личный кабинет</span></legend>
     <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
-    <input name="search" placeholder="Поиск по сайту" type="search">
+    <input class="search-popup-input" name="search" placeholder="Поиск по сайту" type="search">
   </fieldset>
   </form>
 </div>  
