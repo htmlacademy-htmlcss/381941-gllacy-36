@@ -2198,3 +2198,73 @@ header button:active {
   border: 1px solid #2D3440;
   border-radius: 50px;
 }
+
+.page-footer .footer-social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tg {
+    background: url(../img/tg-icon.svg);
+  }
+
+  .tg:hover {
+    background: url(../img/tg-hover.svg);
+    background-size: contain;
+  }
+
+  .tg:active {
+    background: url(../img/tg-active.svg);
+    background-size: contain;
+  }
+
+  .tg:focus {
+    background: url(../img/tg-focus.svg);
+    background-size: contain;
+    outline: none;
+  }
+
+  .vk {
+    background: url(../img/vk-icon.svg);
+    background-size: contain;
+  }
+
+  .vk:hover {
+    background: url(../img/vk-hover.svg);
+    background-size: contain;
+  }
+
+  .vk:active {
+    background: url(../img/vk-active.svg);
+    background-size: contain;
+  }
+
+  .vk:focus {
+    background: url(../img/vk-focus.svg);
+    background-size: contain;
+    outline: none;
+  }
+
+  .youtube {
+    background: url(../img/youtube-icon.svg);
+    background-size: contain;
+  }
+
+  .youtube:hover {
+    background: url(../img/youtube-hover.svg);
+    background-size: contain;
+  }
+
+  .youtube:active {
+    background: url(../img/youtube-active.svg);
+    background-size: contain;
+  }
+
+  .youtube:focus {
+    background: url(../img/youtube-focus.svg);
+    background-size: contain;
+    outline: none;
+  }
