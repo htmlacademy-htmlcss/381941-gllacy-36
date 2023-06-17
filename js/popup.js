@@ -1,4 +1,4 @@
-let popup = document.querySelector('.contact-form-popup');
+let popup = document.querySelector('.contact-form-popup-wrapper');
 let popupButton = document.querySelector('.open-popup');
 let closeButton = document.querySelector('.close-popup');
 
