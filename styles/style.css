@@ -41,14 +41,14 @@
   border: 2px solid #ea5454;
 }
 
-select:disabled,
-button:disabled,
-a:disabled,
-label:disabled {
+.body-wrapper-inner select:disabled,
+.body-wrapper-inner button:disabled,
+.body-wrapper-inner a:disabled,
+.body-wrapper-inner label:disabled {
   opacity: 0.3;
 }
 
-input:disabled {
+.body-wrapper-inner input:disabled {
   background: #e7e7e7;
   border: 1px solid #b9b9b9;
 }
@@ -67,6 +67,17 @@ body {
   box-sizing: border-box;
   padding: 24px 0;
   background: #feafc3;
+}
+
+
+.body-wrapper-inner a:focus {
+  opacity: 1;
+  outline: #2D3440 solid 2px;
+}
+
+.body-wrapper-inner input:focus {
+  opacity: 1;
+  outline: #2D3440 solid 2px;
 }
 
 html {
@@ -180,7 +191,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 16px;
 }
 
@@ -212,7 +223,8 @@ html {
   border-radius: 30px;
   position: relative;
   padding: 6px 16px 6px 39px;
-  position: relative; 
+  position: relative;
+  text-decoration: none; 
 }
 
 .enter-icon {
@@ -237,6 +249,7 @@ html {
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  text-decoration: none;
 }
 
 .user-nav-cart::before {
@@ -333,6 +346,7 @@ html {
 
 .slider-box-item-text-button {
   background: #fcfcfc;
+  display: block;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   border: none;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
@@ -345,6 +359,8 @@ html {
   text-align: center;
   color: #2d3440;
   padding: 12px 32px;
+  max-width: fit-content;
+  text-decoration: none;
 }
 
 .slider-dot {
@@ -471,6 +487,7 @@ html {
   padding: 36px;
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .call-to-action-wrapper {
@@ -508,6 +525,7 @@ html {
   text-align: center;
   color: #2d3440;
   padding: 12px 32px;
+  text-decoration: none;
 }
 
 .call-to-action-item-img {
@@ -517,7 +535,7 @@ html {
 }
 
 .call-to-action {
-  margin-bottom: 81px;
+  margin-bottom: 41px;
 }
 
 .popular-products-heading {
@@ -853,7 +871,7 @@ textarea:hover,
   position: relative;
   border-radius: 16px;
   margin-bottom: 80px;
-  background: url("../img/ice-creams-second-bckgr.jpg");
+  background: #ffffff url("../img/ice-creams-second-bckgr.jpg");
   background-position: -1px -143px;
   background-size: 105%;
 }
@@ -1040,7 +1058,7 @@ textarea:hover,
 }
 
 .adress {
-  background: url("../img/adress-background.jpg");
+  background: #ffffff url("../img/adress-background.jpg");
   padding: 64px;
   background-size: cover;
   background-position: 1px -82px;
@@ -1952,8 +1970,18 @@ textarea:hover,
   background-image: url("../img/radio-white.svg");
 }
 
+.control-radio-input:focus + .control-radio::before {
+  background-image: url("../img/radio-white.svg");
+  opacity: 0.5;
+}
+
 .control-radio-input:checked:hover + .control-radio::before{
   background-image: url("../img/radio-white-checked.svg");
+}
+
+.control-radio:focus::before {
+  background-image: url("../img/radio-white.svg");
+  opacity: 0.5;
 }
 
 .control-input:hover + .control::before {
@@ -1962,6 +1990,20 @@ textarea:hover,
 
 .control-input:checked:hover + .control::before{
   background-image: url("../img/check-white.svg");
+}
+
+.control-input:checked:focus + .control::before{
+  background-image: url("../img/check-white.svg");
+  opacity: 0.5;
+}
+
+.control:focus::before{
+  background-image: url("../img/check-white.svg");
+  opacity: 0.5;
+}
+
+.more-products-pagination-item a:focus {
+  opacity: 0.8;
 }
 
 .range-toggle {
@@ -2025,7 +2067,7 @@ textarea:hover,
 }
 
 .catalog-page .user-nav-login::before {
-  top: 5px;
+  top: 8px;
 }
 
 .dropdown-icon .navigation-link {
@@ -2353,7 +2395,7 @@ header button:active {
   line-height: 22px;
   color: #2d3440;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 37px;
 }
 
 .advantage-wrapper-corner-inner {
@@ -2498,3 +2540,43 @@ body.yellow-theme {
   content: '';
   top: -13px;
 }
+
+.more-products-pagination-item a {
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.raspberry:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 268px;
+  background: url(../img/malinka-bckgr.png);
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.raspberry {
+  position: relative;
+  overflow: hidden;
+}
+
+.marshmallow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 268px;
+  background: url(../img/marshmellow-bckgr.png);
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.marshmallow {
+  position: relative;
+  overflow: hidden;
+}
+
