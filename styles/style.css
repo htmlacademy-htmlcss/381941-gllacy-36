@@ -137,7 +137,7 @@ body {
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 .container {
@@ -2414,4 +2414,15 @@ header button:active {
 
 .logo-link {
   display: inherit;
+}
+
+.body-wrapper-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 } 
+
+.main-index {
+  flex-grow: 1;
+  min-height: 100vh;
+}
