@@ -69,7 +69,6 @@ body {
   background: #feafc3;
 }
 
-
 .body-wrapper-inner a:focus {
   opacity: 1;
   outline: #2D3440 solid 2px;
@@ -2578,5 +2577,9 @@ body.yellow-theme {
 .marshmallow {
   position: relative;
   overflow: hidden;
+}
+
+.body-wrapper-inner button {
+  cursor: pointer;
 }
 
