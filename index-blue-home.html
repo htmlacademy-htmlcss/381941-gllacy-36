@@ -51,12 +51,12 @@
           <fieldset class="search-popup-fieldset">
             <legend class="search-popup-legend"><span class="visually-hidden">Поиск по сайту</span></legend>
             <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
-            <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search">
+            <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search" required>
           </fieldset>
         </form>
       </div> 
 
-      <button type="button" class="user-nav-login"><span class="enter-icon">Вход</span></button>
+      <a href="#" class="user-nav-login"><span class="enter-icon">Вход</span></a>
       <div class="login-popup">
         <form class="login-popup-box" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
 
@@ -83,12 +83,12 @@
         </form>
       </div>
 
-      <button type="button" class="user-nav-cart"><span class="cart-item">2</span> товара</button>
+      <a href="#" class="user-nav-cart"><span class="cart-item">2</span> товара</a>
       <div class="cart-popup">
         <h3 class="cart-popup-heading">Корзина</h3>
 
         <div class="cart-popup-item">
-          <img class="cart-popup-item-img" width="46" height="46" alt="Мороженое со вкусом Малинка" src="img/cart-malinka.jpg">
+          <img class="cart-popup-item-img" width="46" height="46" alt="Мороженое со вкусом Малинка" src="img/cart-raspberry.jpg">
           <div class="cart-popup-item-wrapper-inner">
             <span class="cart-popup-item-title">Малинка</span>
             <span class="cart-popup-item-desc">1 кг х 310 ₽</span>
@@ -108,7 +108,7 @@
         </div>
 
         <div class="cart-popup-bottom">
-          <button class="cart-button button" type="submit">Оформить заказ</button>
+          <button class="cart-button button" type="button">Оформить заказ</button>
           <span class="cart-popup-bottom-total-price">Итого: 790 ₽</span>
         </div>
 
@@ -129,7 +129,7 @@
           <div class="slider-box-item-text">
             <h2 class="slider-box-item-text-heading">Сливочное мороженое <br>со вкусом банана</h2>
             <p class="slider-box-item-text-desc">Сливочное мороженое с ярким банановым <br>вкусом подарит вам свежесть и наслаждение <br>даже в самый жаркий летний день.</p>
-            <button type="button" class="slider-box-item-text-button white-button">Заказать</button>
+            <a class="slider-box-item-text-button white-button">Заказать</a>
           </div>
           <div class="slider-box-item-images">
             <div class="slider-box-item-images-wrapper">
@@ -178,21 +178,19 @@
   <section class="call-to-action">
     <h2 class="call-to-action-heading">Заказывайте мороженое и получайте подарки!</h2>
     <div class="call-to-action-wrapper">
-      <div class="call-to-action-item">
+      <div class="call-to-action-item raspberry">
         <div class="call-to-action-item-text">
           <h3 class="call-to-action-item-heading">Малинка даром!</h3>
           <p class="call-to-action-item-desc">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button type="button" class="call-to-action-item-button white-button">Хочу подарок</button>
+          <a href="#" class="call-to-action-item-button white-button">Хочу подарок</a>
         </div>
-        <img class="call-to-action-item-img" width="219" height="268" src="img/malinka-bckgr.png" alt="Мороженое с малинкой">  
       </div>
-      <div class="call-to-action-item">
+      <div class="call-to-action-item marshmallow">
         <div class="call-to-action-item-text">
           <h3 class="call-to-action-item-heading">Маршмеллоу даром!</h3>
           <p class="call-to-action-item-desc">При покупке 2 кг пломбира добавим <br>в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-          <button type="button" class="call-to-action-item-button white-button">Хочу подарок</button>
+          <a href="#" class="call-to-action-item-button white-button">Хочу подарок</a>
         </div>
-        <img class="call-to-action-item-img" width="219" height="268" src="img/marshmellow-bckgr.png" alt="Мороженое с маршмелоу">  
       </div>
     </div>
   </section>
@@ -203,7 +201,7 @@
     <div class="popular-products-wrapper">
 
       <div class="popular-products-item">
-        <img class="popular-products-item-img" src="img/malinka-product.png" alt="Вкус малинка" width="168" height="168">
+        <img class="popular-products-item-img" src="img/raspberry-product.png" alt="Вкус малинка" width="168" height="168">
         <h3 class="popular-products-item-heading">Малинка</h3>
         <p class="popular-products-item-desc">Сливочное мороженое с малиновым джемом</p>
         <div class="popular-products-item-shop">
@@ -212,7 +210,7 @@
         </div>
       </div>
       <div class="popular-products-item">
-        <img class="popular-products-item-img" src="img/fistashka-product.png" alt="Вкус фисташка" width="168" height="168">
+        <img class="popular-products-item-img" src="img/pistachio-product.png" alt="Вкус фисташка" width="168" height="168">
         <h3 class="popular-products-item-heading">Фисташка</h3>
         <p class="popular-products-item-desc">Фисташковый пломбир с кусочками шоколада</p>
         <div class="popular-products-item-shop">
@@ -221,7 +219,7 @@
         </div>
       </div>
       <div class="popular-products-item">
-        <img class="popular-products-item-img" src="img/chernika-product.png" alt="Вкус черника" width="168" height="168">
+        <img class="popular-products-item-img" src="img/blueberry-product.png" alt="Вкус черника" width="168" height="168">
         <h3 class="popular-products-item-heading">Черника</h3>
         <p class="popular-products-item-desc">Крем-брюле <br>с черничным джемом</p>
         <div class="popular-products-item-shop">
@@ -230,7 +228,7 @@
         </div>
       </div>
       <div class="popular-products-item">
-        <img class="popular-products-item-img" src="img/babl-product.png" alt="Вкус жевачка" width="168" height="168">
+        <img class="popular-products-item-img" src="img/bubble-product.png" alt="Вкус жевачка" width="168" height="168">
         <h3 class="popular-products-item-heading">Бабл-гам</h3>
         <p class="popular-products-item-desc">Ванильный пломбир <br>со сладкой посыпкой</p>
         <div class="popular-products-item-shop">
@@ -374,7 +372,7 @@
 
   <div class="footer-academy-link">
     <a class="page-footer-copyright-link" href="https://htmlacademy.ru/">
-      <img class="footer-academy-link-img" src="img/logo_htmlacademy.svg" alt="Html academy"  width="93" height="27">
+      <img class="footer-academy-link-img" src="img/logo-htmlacademy.svg" alt="Html academy"  width="93" height="27">
     </a>
     <p class="footer-academy-link-copiwrite">Сделано в <a class="link-copiwrite" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
   </div>
@@ -387,7 +385,7 @@
     <form class="contact-form-popup-box" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
       <button class="contact-form-popup-close close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
       <fieldset class="contact-form-popup-fieldset">
-        <legend class="contact-form-popup-legend">Мы обязательно ответим Вам!</legend> 
+        <legend class="contact-form-popup-legend">Мы обязательно ответим вам!</legend> 
 
         <div class="contact-form-popup-name contact-popup-item">
           <label class="contact-form-popup-name-label" for="contact-form-popup-name"><span class="visually-hidden">Имя и фамилия</span></label>
