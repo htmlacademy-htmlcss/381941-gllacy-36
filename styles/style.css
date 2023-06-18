@@ -631,7 +631,7 @@ html {
 .advantage-wrapper-corner {
   box-sizing: border-box;
   border: 24px solid transparent;
-  background: url("../img/vafel-backgr.jpg");
+  background: url("../img/vafel-background.jpg");
   min-height: 479px;
   background-position: 90px;
 }
@@ -871,7 +871,7 @@ textarea:hover,
   position: relative;
   border-radius: 16px;
   margin-bottom: 80px;
-  background: #ffffff url("../img/ice-creams-second-bckgr.jpg");
+  background: #ffffff url("../img/ice-creams-second-background.jpg");
   background-position: -1px -143px;
   background-size: 105%;
 }
@@ -2552,7 +2552,7 @@ body.yellow-theme {
   position: absolute;
   width: 219px;
   height: 268px;
-  background: url(../img/malinka-bckgr.png);
+  background: url(../img/raspberry-background.png);
   right: 0;
   bottom: 0;
   z-index: 0;
@@ -2569,7 +2569,7 @@ body.yellow-theme {
   position: absolute;
   width: 219px;
   height: 268px;
-  background: url(../img/marshmellow-bckgr.png);
+  background: url(../img/marshmellow-background.png);
   right: 0;
   bottom: 0;
   z-index: 0;
