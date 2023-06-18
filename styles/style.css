@@ -395,7 +395,7 @@ html {
 
 .slider-box-item-text-button {
   background: #FCFCFC;
-  outline: 4px solid #F7CAD6;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   border: none;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
@@ -1588,7 +1588,9 @@ textarea::placeholder {
 }
 
 .login-popup-area-input {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+  height: 46px;
+  letter-spacing: -2px;
 }
 
 .login-button-navigation {
@@ -1610,7 +1612,7 @@ textarea::placeholder {
 
 .login-popup-button-wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
@@ -1623,9 +1625,9 @@ textarea::placeholder {
 
 .search-popup:hover {
   display: block;
-  top: 55px;
-  right: 0;
   z-index: 10;
+  right: 235px;
+  top: 51px;
 }
 
 .search-popup-input {
@@ -1653,13 +1655,14 @@ textarea::placeholder {
 }
 
 .navigation-item-sub-menu {
- background: #FCFCFC;
- box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
- border-radius: 4px;
- width: 135px;
- list-style: none;
- margin: 0;
- padding: 8px 0;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  width: 135px;
+  list-style: none;
+  margin: 0;
+  padding: 9px 0;
+  top: 37px;
 }
 
 .navigation-item-sub-menu-item-link {
@@ -1720,7 +1723,19 @@ textarea::placeholder {
 
 .cart-popup-heading {
   margin: 0;
+  margin-top: -1px;
   margin-bottom: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.popup-cart-info {
+  right: 0;
+  top: 52px;
 }
 
 .cart-popup-item {
@@ -1739,8 +1754,9 @@ textarea::placeholder {
   background: url(../img/cart-close.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: auto;
-  margin-left: 48px;
+  margin-left: 44px;
+  position: relative;
+  right: -9px;
 }
 
 .cart-popup-item-wrapper-inner {
@@ -1805,20 +1821,28 @@ textarea::placeholder {
   display: inherit;
 }
 
+.navigation-link:hover + .navigation-item-sub-menu {
+  display: inherit;
+}
+
+.navigation-item-sub-menu:hover {
+  display: inherit;
+}
+
 .user-nav-cart {
   position: relative;
 }
 
 .user-nav-cart:hover ~ .cart-popup {
   display: block;
-  top: 55px;
+  top: 53px;
   right: 0;
   z-index: 10;
 }
 
 .cart-popup:hover {
   display: block;
-  top: 55px;
+  top: 53px;
   z-index: 10;  
 }
 
@@ -1833,23 +1857,28 @@ textarea::placeholder {
 
 .user-nav-search:hover ~ .search-popup {
   display: block;
-  top: 55px;
-  right: 0;
   z-index: 10;
+  right: 235px;
+  top: 51px;
 }
 
 .user-nav-login:hover ~ .login-popup {
   display: block;
-  top: 55px;
-  right: 0;
+  top: 52px;
+  right: 131px;
   z-index: 10;
 }
 
 .login-popup:hover {
   display: block;
-  top: 55px;
-  right: 0;
+  top: 52px;
+  right: 131px;
   z-index: 10;
+}
+
+.login-popup-fieldset {
+  padding: 0;
+  margin: 0;
 }
 
 .popup-switcher {
@@ -2425,4 +2454,70 @@ header button:active {
 .main-index {
   flex-grow: 1;
   min-height: 100vh;
+}
+
+body.blue-theme {
+  background: #69A9FF;
+}
+
+body.yellow-theme {
+  background: #FCC850;
+}
+
+.blue-theme .slider-box-item-images-wrapper-inner::before {
+  background: #9FC8FF;
+  width: 311px;
+  right: 0px;
+}
+
+.blue-theme .slider-box-item-next::before {
+  background: #9FC8FF;
+}
+
+.yellow-theme .slider-box-item-images-wrapper-inner::before {
+  background: #FCDC92;
+  width: 311px;
+  right: 6px;
+}
+
+.yellow-theme .slider-box-item-next::before {
+  background: #FCDC92;
+}
+
+.blue-theme .slider-box-item-text {
+    margin-right: 26px;
+}
+
+.blue-theme .slider-box-dots-prev {
+  left: -6px;
+}
+
+.blue-theme .slider-box-item-images-img {
+  position: relative;
+  left: 8px;
+}
+
+.yellow-theme .slider-box-item-text {
+    margin-right: 26px;
+}
+
+.yellow-theme .slider-box-dots-prev {
+  left: -11px;
+}
+
+.yellow-theme .slider-box-item-images-img {
+  position: relative;
+  left: 2px;
+}
+
+.yellow-theme .slider-box-dots-next {
+  right: -16px;
+}
+
+.yellow-theme .slider-box-item-next::before {
+  left: -23px;
+}
+
+.yellow-theme .slider-box-item-next-img {
+  right: 7px;
 }
