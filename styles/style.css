@@ -2521,3 +2521,12 @@ body.yellow-theme {
 .yellow-theme .slider-box-item-next-img {
   right: 7px;
 }
+
+.navigation-item-sub-menu::before {
+  width: 135px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  content: '';
+  top: -13px;
+}
