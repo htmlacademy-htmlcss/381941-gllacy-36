@@ -1978,6 +1978,30 @@ html {
   opacity: 0.5;
 }
 
+.catalog-filter-item:focus .control-radio::before {
+  opacity: 0.5;
+  outline: 2px solid #2d3440;
+}
+
+.catalog-filter-item:focus .control::before {
+  opacity: 0.5;
+  outline: 2px solid #2d3440;
+}
+
+.catalog-filter-item:focus .control-radio::before {
+  opacity: 0.5;
+  outline: 2px solid #2d3440;
+}
+
+.control-radio-input:focus + .control-radio {
+  outline: #2D3440 solid 2px;
+}
+
+.control-input:focus + .control {
+   opacity: 0.5;
+   outline: 2px solid #2d3440;
+}
+
 .control-radio-input:checked:hover + .control-radio::before{
   background-image: url("../img/radio-white-checked.svg");
 }
