@@ -1911,9 +1911,10 @@ html {
 
 .catalog-filter .control-input {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-  display: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .control {
@@ -1942,9 +1943,10 @@ html {
 
 .catalog-filter .control-radio-input {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-  display: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .control-radio {
@@ -2310,6 +2312,11 @@ html {
   height: 26px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.body-wrapper-inner .footer-social-link:focus {
+  opacity: 1;
+  outline: none;
 }
 
 .tg {
