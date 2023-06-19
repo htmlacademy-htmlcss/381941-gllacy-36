@@ -1643,6 +1643,7 @@ html {
   margin: 0;
   padding: 9px 0;
   top: 37px;
+  z-index: 10;
 }
 
 .navigation-item-sub-menu-item-link {
